@@ -41,10 +41,8 @@
       margin: 0.5rem 0 1rem 0;
     }
 
-    .dropdown-btn,
     .nav-link,
-    .contact-links a,
-    .whatsapp-btn {
+    .contact-btn {
       background-color: #000;
       color: white;
       text-decoration: none;
@@ -55,12 +53,12 @@
       display: block;
       margin: 0.5rem 0;
       transition: background-color 0.3s;
+      width: 100%;
+      max-width: 200px;
     }
 
-    .dropdown-btn:hover,
     .nav-link:hover,
-    .contact-links a:hover,
-    .whatsapp-btn:hover {
+    .contact-btn:hover {
       background-color: #333;
     }
 
@@ -98,12 +96,6 @@
       flex: 1;
       padding: 2rem;
     }
-
-    .nav-link {
-      width: 100%;
-      max-width: 200px;
-      margin: 0.3rem auto;
-    }
   </style>
 </head>
 <body>
@@ -111,7 +103,7 @@
     <img src="https://media.licdn.com/dms/image/v2/D4E03AQHowXXUTHgn6Q/profile-displayphoto-shrink_800_800/B4EZYPe1fpHkAc-/0/1744016464815?e=1750291200&v=beta&t=9OPSjSJXyoQqiN92-HN23PIzzcZK8sKl59xwlchT6UE" alt="Profile Picture" class="profile-pic" />
     <h2>Nicholas Leybourne</h2>
 
-    <button class="dropdown-btn" onclick="toggleDropdown()">Contact Me</button>
+    <button class="contact-btn" onclick="toggleDropdown()">Contact Me</button>
     <div id="contactInfo" class="dropdown-content">
       <p><img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="Email" style="height: 20px;"> NicholasLeybourne@pm.me</p>
       <p><img src="https://icons.veryicon.com/png/o/miscellaneous/yunrenui-original-ui-of-fool-cloud/phone-circle.png" alt="Phone" style="height: 20px;"> +44 7780 739 259</p>
@@ -138,4 +130,3 @@
   </script>
 </body>
 </html>
-
