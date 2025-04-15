@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nick Leybourne</title>
+  <title>Nicholas Leybourne</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
@@ -112,11 +112,29 @@
     .whatsapp-btn:hover {
       background-color: #333;
     }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
   <aside class="sidebar">
-    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHowXXUTHgn6Q/profile-displayphoto-shrink_800_800/B4EZYPe1fpHkAc-/0/1744016464815?e=1750291200&v=beta&t=9OPSjSJXyoQqiN92-HN23PIzzcZK8sKl59xwlchT6UE" alt="Profile Picture" class="profile-pic" />
+    <img src="https://media.licdn.com/dms/image/D4E03AQHowXXUTHgn6Q/profile-displayphoto-shrink_800_800/0/1704016464815?e=1750291200&v=beta&t=9OPSjSJXyoQqiN92-HN23PIzzcZK8sKl59xwlchT6UE" alt="Profile Picture" class="profile-pic" />
     <h2>Nicholas Leybourne</h2>
 
     <button class="contact-btn" onclick="toggleDropdown()">Contact Me</button>
@@ -140,20 +158,29 @@
 
   <main class="content">
     <h1>Professional</h1>
-    <p>TEST HERE</p>
-  </main>
 
-  <script>
-    function toggleDropdown() {
-      const contactInfo = document.getElementById("contactInfo");
-      const isVisible = contactInfo.style.display === "block";
-      contactInfo.style.display = isVisible ? "none" : "block";
-    }
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>PhD Research Student</strong>, University of Surrey (Centre for Vision, Speech and Signal Processing)</li>
+        <li><strong>MSc in Medical Physics</strong>, King's College London</li>
+        <li><strong>BSc in Physics</strong>, University of Birmingham</li>
+      </ul>
+    </section>
 
-    // Ensure dropdown is hidden on page load
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById("contactInfo").style.display = "none";
-    });
-  </script>
-</body>
-</html>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Postgraduate Researcher</strong>, University of Surrey</li>
+        <li><strong>Medical Physics Intern</strong>, Guy's and St Thomas' NHS Foundation Trust</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Digital PET/CT in Radiotherapy Treatment</strong>: Quantifying the distinction between novel digital PET imaging and current analogue systems to improve radiotherapy treatment planning for challenging regions. <a href="https://www.surrey.ac.uk/people/nicholas-leybourne" target="_blank">Learn more</a></li>
+        <li><strong>Optical Surface Capture for 3D Printing in Skin Radiotherapy</strong>: MSc research project focusing on the development of optical surface capture techniques for 3D printing applications in skin radiotherapy.</li>
+        <li><strong>Experimental Project in Nuclear Medicine
+::contentReference[oaicite:1]{index=1}
+ 
