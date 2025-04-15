@@ -18,16 +18,8 @@
       color: #333366;
       margin-top: 1rem;
     }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #336699;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
     .profile-pic {
-      width: 200px; /* Adjust size as needed */
+      width: 200px;
       height: 200px;
       border-radius: 50%;
       margin-bottom: 1rem;
@@ -36,7 +28,7 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      margin-top: 1rem; /* Adjusted margin for better positioning */
+      margin-top: 1rem;
     }
     .contact-links a {
       text-decoration: none;
@@ -49,12 +41,37 @@
       text-decoration: underline;
     }
     .contact-links img {
-      height: 40px; /* Adjust logo size */
+      height: 40px;
       margin-right: 0.5rem;
     }
     /* Make the JobzMall logo circular */
     .contact-links a img[alt="JobzMall Logo"] {
       border-radius: 50%;
+    }
+
+    /* Vertical buttons styling */
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+
+    nav a {
+      background-color: #336699;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 200px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #254d73;
     }
   </style>
 </head>
@@ -83,14 +100,13 @@
     </a>
   </div>
 
-<p>
-   <br>
-  <strong style="display: block; text-align: center;">Welcome to my personal website.</strong>
-  <br>
-  I'm a PhD candidate in medical physics at the University of Surrey, specialising in SiPM-based PET/CT scanners, with experience in image processing, radiation safety, and data analysis, demonstrating strong proficiency in MATLAB and Python. With a background in physics, mathematics, and computing, I bring expertise in experimental research, problem-solving, and communication. I collaborate with leading organizations in medical physics and have multiple publications, presenting my research at international conferences to advance the use of medical imaging technologies.
-</p>
+  <p>
+    <strong style="display: block; text-align: center;">Welcome to my personal website.</strong>
+    <br>
+    I'm a PhD candidate in medical physics at the University of Surrey, specialising in SiPM-based PET/CT scanners, with experience in image processing, radiation safety, and data analysis, demonstrating strong proficiency in MATLAB and Python. With a background in physics, mathematics, and computing, I bring expertise in experimental research, problem-solving, and communication. I collaborate with leading organizations in medical physics and have multiple publications, presenting my research at international conferences to advance the use of medical imaging technologies.
+  </p>
 
-
+  <!-- Vertical Buttons -->
   <nav>
     <a href="cv.html">CV</a>
     <a href="research.html">Research</a>
