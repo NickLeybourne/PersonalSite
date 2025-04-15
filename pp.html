@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nick Leybourne</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #b0b0b0;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 300px;
+      background-color: #f0f0f0;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 1px solid #ccc;
+    }
+
+    .sidebar img.profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .nav-link,
+    .contact-btn {
+      background-color: #000;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      margin: 0.5rem 0;
+      transition: background-color 0.3s;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .nav-link:hover,
+    .contact-btn:hover {
+      background-color: #333;
+    }
+
+    .dropdown-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    .contact-item {
+      margin: 0.3rem 0;
+    }
+
+    .contact-links {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .contact-links img {
+      height: 30px;
+      margin-right: 0.5rem;
+      border-radius: 50%;
+    }
+
+    .content {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    .whatsapp-btn {
+      background-color: #000;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+      max-width: 200px;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHowXXUTHgn6Q/profile-displayphoto-shrink_800_800/B4EZYPe1fpHkAc-/0/1744016464815?e=1750291200&v=beta&t=9OPSjSJXyoQqiN92-HN23PIzzcZK8sKl59xwlchT6UE" alt="Profile Picture" class="profile-pic" />
+    <h2>Nicholas Leybourne</h2>
+
+    <button class="contact-btn" onclick="toggleDropdown()">Contact Me</button>
+    <div id="contactInfo" class="dropdown-content">
+      <p class="contact-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="Email" style="height: 20px; vertical-align: middle;"> NicholasLeybourne@pm.me
+      </p>
+      <p class="contact-item">
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/yunrenui-original-ui-of-fool-cloud/phone-circle.png" alt="Phone" style="height: 20px; vertical-align: middle;"> +44 7780 739 259
+      </p>
+      <a class="whatsapp-btn contact-item" href="https://wa.me/447780739259" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+
+    <a class="nav-link" href="index.html">About</a>
+    <a class="nav-link" href="professional.html">Professional</a>
+    <a class="nav-link" href="accomplishments.html">Accomplishments</a>
+    <a class="nav-link" href="pp.html">Publications & Press</a>
+  </aside>
+
+  <main class="content">
+    <h1>Professional</h1>
+    <p>TEST HERE</p>
+  </main>
+
+  <script>
+    function toggleDropdown() {
+      const contactInfo = document.getElementById("contactInfo");
+      const isVisible = contactInfo.style.display === "block";
+      contactInfo.style.display = isVisible ? "none" : "block";
+    }
+
+    // Ensure dropdown is hidden on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById("contactInfo").style.display = "none";
+    });
+  </script>
+</body>
+</html>
 
