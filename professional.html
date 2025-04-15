@@ -63,14 +63,19 @@
     }
 
     .dropdown-content {
-      display: none;
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-top: 0.5rem;
-      text-align: center;
-    }
+  display: none; /* <--- add this */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 
     .contact-links {
       margin-top: 1rem;
