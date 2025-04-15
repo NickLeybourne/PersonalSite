@@ -63,14 +63,13 @@
     }
 
     .dropdown-content {
-      display: none; /* Ensure hidden on load */
+      display: none;
       background-color: #fff;
       border-radius: 8px;
       padding: 1rem;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       margin-top: 0.5rem;
       text-align: center;
-      display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1rem;
@@ -101,7 +100,6 @@
       padding: 2rem;
     }
 
-    /* Specific styling for WhatsApp button */
     .whatsapp-btn {
       background-color: #000;
       color: white;
@@ -111,7 +109,6 @@
       text-align: center;
       width: 100%;
       max-width: 200px;
-      margin: 0.5rem 0;
       transition: background-color 0.3s;
     }
 
@@ -144,13 +141,13 @@
   </main>
 
   <script>
+    window.onload = function() {
+      document.getElementById("contactInfo").style.display = "none";
+    };
+
     function toggleDropdown() {
       const contactInfo = document.getElementById("contactInfo");
-      if (contactInfo.style.display === "flex") {
-        contactInfo.style.display = "none";
-      } else {
-        contactInfo.style.display = "flex";
-      }
+      contactInfo.style.display = contactInfo.style.display === "flex" ? "none" : "flex";
     }
   </script>
 </body>
