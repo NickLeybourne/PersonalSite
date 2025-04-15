@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nick Leybourne</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #b0b0b0;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 300px;
+      background-color: #f0f0f0;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 1px solid #ccc;
+    }
+
+    .sidebar img.profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .dropdown-btn,
+    .nav-link,
+    .contact-links a,
+    .whatsapp-btn {
+      background-color: #000;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      margin: 0.5rem 0;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-btn:hover,
+    .nav-link:hover,
+    .contact-links a:hover,
+    .whatsapp-btn:hover {
+      background-color: #333;
+    }
+
+    .dropdown-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    .contact-links {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .contact-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-links img {
+      height: 30px;
+      margin-right: 0.5rem;
+      border-radius: 50%;
+    }
+
+    .content {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    .nav-link {
+      width: 100%;
+      max-width: 200px;
+      margin: 0.3rem auto;
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHowXXUTHgn6Q/profile-displayphoto-shrink_800_800/B4EZYPe1fpHkAc-/0/1744016464815?e=1750291200&v=beta&t=9OPSjSJXyoQqiN92-HN23PIzzcZK8sKl59xwlchT6UE" alt="Profile Picture" class="profile-pic" />
+    <h2>Nicholas Leybourne</h2>
+
+    <button class="dropdown-btn" onclick="toggleDropdown()">Contact Me</button>
+    <div id="contactInfo" class="dropdown-content">
+      <p><img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="Email" style="height: 20px;"> NicholasLeybourne@pm.me</p>
+      <p><img src="https://icons.veryicon.com/png/o/miscellaneous/yunrenui-original-ui-of-fool-cloud/phone-circle.png" alt="Phone" style="height: 20px;"> +44 7780 739 259</p>
+      <a class="whatsapp-btn" href="https://wa.me/447780739259" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/nicholas-leybourne-431429189/" target="_blank">
+        <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="LinkedIn"> LinkedIn
+      </a>
+      <a href="https://orcid.org/0009-0001-9474-7476" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/1024px-ORCID_iD.svg.png" alt="ORCID"> ORCID iD
+      </a>
+      <a href="https://scholar.google.com/citations?user=EWFA3U8AAAAJ&hl=en&oi=ao" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="Google Scholar"> Google Scholar
+      </a>
+      <a href="https://app.jobzmall.com/profile/nicholas-leybourne" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/C4D0BAQG2r8xGJq6uyQ/company-logo_200_200/company-logo_200_200/0/1674468073784/jobzmall_logo?e=2147483647&v=beta&t=AoWtbw0Lemq4n0U3eMbvltMgi5nNNtKwXsumqohPcqM" alt="JobzMall"> JobzMall
+      </a>
+      <a href="https://www.surrey.ac.uk/people/nicholas-leybourne" target="_blank">
+        <img src="https://crystalpng.com/wp-content/uploads/2025/01/university-of-surrey-logo-in-circle.png" alt="Surrey"> University of Surrey
+      </a>
+    </div>
+
+    <a class="nav-link" href="index.html">About</a>
+    <a class="nav-link" href="professional.html">Professional</a>
+    <a class="nav-link" href="accomplishments.html">Accomplishments</a>
+    <a class="nav-link" href="pp.html">Publications & Press</a>
+  </aside>
+
+  <main class="content">
+    <h1>Page Title</h1>
+    <p>This is the content area. You can place your professional, accomplishments, or publication info here.</p>
+  </main>
+
+  <script>
+    function toggleDropdown() {
+      const contactInfo = document.getElementById("contactInfo");
+      contactInfo.style.display = contactInfo.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
 
