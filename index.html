@@ -14,22 +14,26 @@
       flex-direction: column;
       align-items: center;
     }
+
     h1 { 
       color: #333366;
       margin-top: 1rem;
     }
+
     .profile-pic {
       width: 200px;
       height: 200px;
       border-radius: 50%;
       margin-bottom: 1rem;
     }
+
     .contact-links {
       display: flex;
       justify-content: center;
       gap: 2rem;
       margin-top: 1rem;
     }
+
     .contact-links a {
       text-decoration: none;
       color: #336699;
@@ -37,19 +41,20 @@
       display: flex;
       align-items: center;
     }
+
     .contact-links a:hover {
       text-decoration: underline;
     }
+
     .contact-links img {
       height: 40px;
       margin-right: 0.5rem;
     }
-    /* Make the JobzMall logo circular */
+
     .contact-links a img[alt="JobzMall Logo"] {
       border-radius: 50%;
     }
 
-    /* Vertical buttons styling */
     nav {
       display: flex;
       flex-direction: column;
@@ -72,6 +77,41 @@
 
     nav a:hover {
       background-color: #254d73;
+    }
+
+    /* Dropdown contact section */
+    .dropdown {
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .dropdown-btn {
+      background-color: #336699;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-btn:hover {
+      background-color: #254d73;
+    }
+
+    .dropdown-content {
+      display: none;
+      margin-top: 1rem;
+      background-color: #f0f4f8;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-size: 0.95rem;
+      color: #333;
     }
   </style>
 </head>
@@ -113,6 +153,23 @@
     <a href="research.html">Publications & Press</a>
   </nav>
 
+  <!-- Dropdown Contact Section -->
+  <div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown()">Contact Me</button>
+    <div id="contactInfo" class="dropdown-content">
+      📧 <strong>Email:</strong> nick.leybourne@example.com<br>
+      📞 <strong>Phone:</strong> +44 7123 456789
+    </div>
+  </div>
+
   <p>More content coming soon...</p>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleDropdown() {
+      const contactInfo = document.getElementById("contactInfo");
+      contactInfo.style.display = contactInfo.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
