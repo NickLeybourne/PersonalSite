@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <title>Nick Leybourne</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 2rem; }
-    h1 { color: #333366; }
+    body { 
+      font-family: Arial, sans-serif; 
+      max-width: 700px; 
+      margin: auto; 
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    h1 { 
+      color: #333366;
+      margin-left: 80px; /* Adjusted to make space for the profile picture */
+    }
     nav a {
       margin-right: 1rem;
       text-decoration: none;
@@ -14,9 +25,18 @@
     nav a:hover {
       text-decoration: underline;
     }
+    .profile-pic {
+      width: 60px; /* Adjust size as needed */
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
   </style>
 </head>
 <body>
+  <!-- Profile Picture -->
+  <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+
   <h1>Hello, I'm Nicholas Leybourne</h1>
   <p>Welcome to my personal website. I'm a research scientist specialising in nuclear medicine.</p>
 
