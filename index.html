@@ -32,7 +32,6 @@
       justify-content: center;
       gap: 2rem;
       margin-top: 1rem;
-      flex-wrap: wrap;
     }
 
     .contact-links a {
@@ -84,7 +83,7 @@
     .dropdown {
       margin-top: 2rem;
       width: 100%;
-      max-width: 500px;
+      max-width: 300px;
       text-align: center;
     }
 
@@ -109,34 +108,47 @@
       margin-top: 1rem;
       background-color: #f0f4f8;
       border-radius: 8px;
-      padding: 1rem 2rem;
+      padding: 1rem;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #333;
     }
 
-    .whatsapp-btn {
-      margin-top: 1rem;
+    /* Contact buttons styling */
+    .contact-btn {
       display: inline-block;
-      background-color: #25D366;
+      background-color: #336699;
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      margin-top: 0.5rem;
       transition: background-color 0.3s;
+      width: 100%;
+      text-align: center;
     }
 
-    .whatsapp-btn:hover {
+    .contact-btn:hover {
+      background-color: #254d73;
+    }
+
+    .contact-btn.whatsapp {
+      background-color: #25D366;
+    }
+
+    .contact-btn.whatsapp:hover {
       background-color: #1ebc57;
     }
   </style>
 </head>
 <body>
+  <!-- Profile Picture -->
   <img src="https://media.licdn.com/dms/image/v2/D4E03AQHowXXUTHgn6Q/profile-displayphoto-shrink_800_800/B4EZYPe1fpHkAc-/0/1744016464815?e=1750291200&v=beta&t=9OPSjSJXyoQqiN92-HN23PIzzcZK8sKl59xwlchT6UE" alt="Profile Picture" class="profile-pic">
 
   <h1>Nicholas Leybourne</h1>
 
+  <!-- Contact Links -->
   <div class="contact-links">
     <a href="https://www.linkedin.com/in/nicholas-leybourne-431429189/" target="_blank">
       <img src="https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg" alt="LinkedIn Logo"> LinkedIn
@@ -161,23 +173,32 @@
     I'm a PhD candidate in medical physics at the University of Surrey, specialising in SiPM-based PET/CT scanners, with experience in image processing, radiation safety, and data analysis, demonstrating strong proficiency in MATLAB and Python. With a background in physics, mathematics, and computing, I bring expertise in experimental research, problem-solving, and communication. I collaborate with leading organizations in medical physics and have multiple publications, presenting my research at international conferences to advance the use of medical imaging technologies.
   </p>
 
+  <!-- Vertical Buttons -->
   <nav>
     <a href="research.html">Professional</a> 
     <a href="cv.html">Accomplishments</a>
     <a href="research.html">Publications & Press</a>
   </nav>
 
+  <!-- Dropdown Contact Section -->
   <div class="dropdown">
     <button class="dropdown-btn" onclick="toggleDropdown()">Contact Me</button>
     <div id="contactInfo" class="dropdown-content">
-      📧 <strong>Email:</strong> NicholasLeybourne@protonmail.ch<br>
-      📞 <strong>Phone:</strong> +44 7780 739 259<br>
-      <a class="whatsapp-btn" href="https://wa.me/447780739259" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a class="contact-btn" href="mailto:NicholasLeybourne@protonmail.ch" target="_blank">
+        📧 Email: NicholasLeybourne@protonmail.ch
+      </a><br>
+      <a class="contact-btn" href="tel:+447780739259" target="_blank">
+        📞 Phone: +44 7780 739 259
+      </a><br>
+      <a class="contact-btn whatsapp" href="https://wa.me/447780739259" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
     </div>
   </div>
 
   <p>More content coming soon...</p>
 
+  <!-- JavaScript -->
   <script>
     function toggleDropdown() {
       const contactInfo = document.getElementById("contactInfo");
