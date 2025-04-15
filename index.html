@@ -13,8 +13,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #b0b0b0; /* medium grey */
-      color: #333; /* fallback for incorrect 'colour' */
+      background-color: #b0b0b0;
+      color: #333;
     }
 
     h1 { 
@@ -58,9 +58,13 @@
       border-radius: 50%;
     }
 
-    
     .contact-links a img[alt="Linkedin Logo"] {
       border-radius: 99%;
+    }
+
+    .linkedin-link {
+      transform: scale(1.2);
+      transform-origin: center;
     }
 
     nav {
@@ -72,7 +76,7 @@
     }
 
     nav a {
-      background-color: #000; /* black */
+      background-color: #000;
       color: white;
       padding: 0.75rem 1.5rem;
       text-decoration: none;
@@ -84,7 +88,7 @@
     }
 
     nav a:hover {
-      background-color: #333; /* dark grey on hover */
+      background-color: #333;
     }
 
     .dropdown {
@@ -95,7 +99,7 @@
     }
 
     .dropdown-btn {
-      background-color: #000; /* black */
+      background-color: #000;
       color: white;
       padding: 0.75rem;
       border: none;
@@ -107,7 +111,7 @@
     }
 
     .dropdown-btn:hover {
-      background-color: #333; /* dark grey */
+      background-color: #333;
     }
 
     .dropdown-content {
@@ -132,7 +136,7 @@
     .whatsapp-btn {
       margin-top: 1rem;
       display: inline-block;
-      background-color: #000; /* black */
+      background-color: #000;
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
@@ -142,7 +146,7 @@
     }
 
     .whatsapp-btn:hover {
-      background-color: #333; /* dark grey */
+      background-color: #333;
     }
   </style>
 </head>
@@ -171,7 +175,7 @@
   </div>
 
   <div class="contact-links">
-    <a href="https://www.linkedin.com/in/nicholas-leybourne-431429189/" target="_blank">
+    <a href="https://www.linkedin.com/in/nicholas-leybourne-431429189/" target="_blank" class="linkedin-link">
       <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"  alt="Linkedin Logo"> LinkedIn
     </a>
     <a href="https://orcid.org/0009-0001-9474-7476" target="_blank">
