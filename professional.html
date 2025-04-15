@@ -120,6 +120,7 @@
     h2 {
       border-bottom: 2px solid #333;
       padding-bottom: 0.5rem;
+      cursor: pointer;
     }
 
     ul {
@@ -129,6 +130,16 @@
 
     li {
       margin-bottom: 0.5rem;
+    }
+
+    .dropdown-item {
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    .dropdown {
+      display: none;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -154,9 +165,6 @@
     <a class="nav-link" href="professional.html">Professional</a>
     <a class="nav-link" href="accomplishments.html">Accomplishments</a>
     <a class="nav-link" href="pp.html">Publications & Press</a>
-
-    <!-- Adding Professional Link -->
-    <a class="nav-link" href="projects.html">Projects</a>
   </aside>
 
   <main class="content">
@@ -164,29 +172,69 @@
     <p>PhD candidate in medical physics at the University of Surrey, specialising in SiPM-based PET/CT scanners, with experience in image processing, radiation safety, and data analysis, demonstrating strong proficiency in MATLAB and Python. With a background in physics, mathematics, and computing, I bring expertise in experimental research, problem-solving, and communication. I collaborate with leading organizations in medical physics and have multiple publications, presenting my research at international conferences to advance the use of medical imaging technologies.</p>
 
     <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>PhD in Medical Physics</strong>, University of Surrey (Centre for Vision, Speech and Signal Processing)</li>
-        <li><strong>MSc in Medical Physics</strong>, University of Surrey</li>
-        <li><strong>BSc in Physics</strong>, University of Kent</li>
-      </ul>
+      <h2 onclick="toggleSection('education')">Education</h2>
+      <div id="education" class="dropdown">
+        <div class="dropdown-item" onclick="toggleItem('phd')">
+          <strong>PhD in Medical Physics</strong>, University of Surrey (Centre for Vision, Speech and Signal Processing)
+          <div id="phd" class="dropdown">
+            <p>Details about the PhD, such as thesis topic, research focus, and any significant outcomes or collaborations.</p>
+          </div>
+        </div>
+        <div class="dropdown-item" onclick="toggleItem('msc')">
+          <strong>MSc in Medical Physics</strong>, University of Surrey
+          <div id="msc" class="dropdown">
+            <p>Details about the MSc, including key courses, research topics, and projects completed.</p>
+          </div>
+        </div>
+        <div class="dropdown-item" onclick="toggleItem('bsc')">
+          <strong>BSc in Physics</strong>, University of Kent
+          <div id="bsc" class="dropdown">
+            <p>Details about the BSc program, including notable coursework and skills gained during the degree.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Postgraduate Researcher</strong>, University of Surrey</li>
-        <li><strong>Medical Physics Intern</strong>, Guy's and St Thomas' NHS Foundation Trust</li>
-      </ul>
+      <h2 onclick="toggleSection('experience')">Experience</h2>
+      <div id="experience" class="dropdown">
+        <div class="dropdown-item" onclick="toggleItem('postgrad')">
+          <strong>Postgraduate Researcher</strong>, University of Surrey
+          <div id="postgrad" class="dropdown">
+            <p>Details about the research role, including key responsibilities, collaborations, and outcomes of the work.</p>
+          </div>
+        </div>
+        <div class="dropdown-item" onclick="toggleItem('internship')">
+          <strong>Medical Physics Intern</strong>, Guy's and St Thomas' NHS Foundation Trust
+          <div id="internship" class="dropdown">
+            <p>Details about the internship, including specific projects or tasks performed during the time there.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Digital PET/CT in Radiotherapy Treatment</strong>: Quantifying the distinction between novel digital PET imaging and current analogue systems to improve radiotherapy treatment planning for challenging regions. <a href="https://www.surrey.ac.uk/people/nicholas-leybourne" target="_blank">Learn more</a></li>
-        <li><strong>Optical Surface Capture for 3D Printing in Skin Radiotherapy</strong>: MSc research project focusing on the development of optical surface capture techniques for 3D printing applications in skin radiotherapy.</li>
-        <li><strong>Experimental Project in Nuclear Medicine</strong>: Research into advanced imaging techniques in nuclear medicine to improve diagnostics and treatment planning.</li>
-      </ul>
+      <h2 onclick="toggleSection('projects')">Projects</h2>
+      <div id="projects" class="dropdown">
+        <div class="dropdown-item" onclick="toggleItem('digitalPET')">
+          <strong>Digital PET/CT in Radiotherapy Treatment</strong>
+          <div id="digitalPET" class="dropdown">
+            <p>Quantifying the distinction between novel digital PET imaging and current analogue systems to improve radiotherapy treatment planning for challenging regions. <a href="https://www.surrey.ac.uk/people/nicholas-leybourne" target="_blank">Learn more</a></p>
+          </div>
+        </div>
+        <div class="dropdown-item" onclick="toggleItem('3dPrinting')">
+          <strong>Optical Surface Capture for 3D Printing in Skin Radiotherapy</strong>
+          <div id="3dPrinting" class="dropdown">
+            <p>MSc research project focusing on the development of optical surface capture techniques for 3D printing applications in skin radiotherapy.</p>
+          </div>
+        </div>
+        <div class="dropdown-item" onclick="toggleItem('experimental')">
+          <strong>Experimental Project in Nuclear Medicine</strong>
+          <div id="experimental" class="dropdown">
+            <p>Details about experimental projects related to nuclear medicine in medical physics.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -197,9 +245,23 @@
       contactInfo.style.display = isVisible ? "none" : "block";
     }
 
-    // Ensure dropdown is hidden on page load
+    function toggleSection(section) {
+      const sectionContent = document.getElementById(section);
+      const isVisible = sectionContent.style.display === "block";
+      sectionContent.style.display = isVisible ? "none" : "block";
+    }
+
+    function toggleItem(item) {
+      const itemContent = document.getElementById(item);
+      const isVisible = itemContent.style.display === "block";
+      itemContent.style.display = isVisible ? "none" : "block";
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
       document.getElementById("contactInfo").style.display = "none";
+      document.getElementById("education").style.display = "none";
+      document.getElementById("experience").style.display = "none";
+      document.getElementById("projects").style.display = "none";
     });
   </script>
 </body>
