@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Nick Leybourne</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 2rem; }
+    h1 { color: #333366; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 1rem 0; }
+    a { text-decoration: none; color: #336699; font-size: 1.1rem; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Contact</h1>
+  <p><a href="index.html">← Back to Home</a></p>
+  
+  <ul>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">linkedin.com/in/YOUR_USERNAME</a></li>
+    <li><strong>ORCID:</strong> <a href="https://orcid.org/YOUR_ORCID_ID" target="_blank">orcid.org/YOUR_ORCID_ID</a></li>
+    <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank">Google Scholar Profile</a></li>
+    <li><strong>JobzMall:</strong> <a href="https://www.jobzmall.com/profile/YOUR_PROFILE" target="_blank">jobzmall.com/profile/YOUR_PROFILE</a></li>
+  </ul>
+</body>
+</html>
