@@ -63,19 +63,18 @@
     }
 
     .dropdown-content {
-  display: none; /* <--- add this */
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin-top: 0.5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
+      display: none; /* Ensure hidden on load */
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 0.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
 
     .contact-links {
       margin-top: 1rem;
@@ -104,12 +103,11 @@
 
     /* Specific styling for WhatsApp button */
     .whatsapp-btn {
-      background-color: #000; /* Set background to black */
+      background-color: #000;
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
       font-weight: bold;
-      display: block;
       text-align: center;
       width: 100%;
       max-width: 200px;
@@ -118,15 +116,7 @@
     }
 
     .whatsapp-btn:hover {
-      background-color: #333; /* Darker shade on hover */
-    }
-
-    /* Ensure the button stays centered */
-    .dropdown-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem; /* Adds space between the items */
+      background-color: #333;
     }
   </style>
 </head>
@@ -150,13 +140,17 @@
 
   <main class="content">
     <h1>Professional</h1>
-    <p> TEST HERE </p>
+    <p>TEST HERE</p>
   </main>
 
   <script>
     function toggleDropdown() {
       const contactInfo = document.getElementById("contactInfo");
-      contactInfo.style.display = contactInfo.style.display === "block" ? "none" : "block";
+      if (contactInfo.style.display === "flex") {
+        contactInfo.style.display = "none";
+      } else {
+        contactInfo.style.display = "flex";
+      }
     }
   </script>
 </body>
