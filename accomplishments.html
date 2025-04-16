@@ -125,51 +125,54 @@
       margin-bottom: 2rem;
     }
 
-    h2 {
-      border-bottom: 2px solid #333;
-      padding-bottom: 0.5rem;
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-
-    .edu-exp-entry {
+    .feed-item {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
       margin-bottom: 1rem;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
-    .edu-exp-entry .text {
-      max-width: 70%;
+    .feed-text {
+      flex: 1;
+      margin-right: 1rem;
     }
 
-    .edu-exp-entry .date {
-      font-weight: bold;
-      white-space: nowrap;
-      margin-left: 1rem;
-      text-align: right;
-    }
-
-    .edu-exp-entry p {
-      margin: 0.25rem 0 0 0;
+    .feed-text p {
       font-size: 0.95rem;
       color: #555;
     }
 
-    .feed-entry {
-      margin-bottom: 1.5rem;
+    .feed-text .date {
+      font-weight: bold;
+      color: #333;
+      margin-top: 0.5rem;
     }
 
-    .feed-entry p {
-      font-size: 1.2rem;
-      color: #444;
+    .feed-image {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      border-radius: 8px;
+    }
+
+    .feed-dots {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #888;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .feed-dots:hover {
+      color: #333;
     }
   </style>
 </head>
@@ -193,27 +196,46 @@
 
     <a class="nav-link" href="index.html">About</a>
     <a class="nav-link" href="accomplishments.html">Accomplishments</a>
+    <a class="nav-link" href="professional.html">Professional</a>
     <a class="nav-link" href="pp.html">Publications & Press</a>
   </aside>
 
   <main class="content">
     <h1>Accomplishments</h1>
+
     <section>
-      <div class="feed-entry">
-        <h3>Example 1</h3>
-        <p>This is an example of an accomplishment that you can display in the feed.</p>
+      <div class="feed-item">
+        <div class="feed-text">
+          <h3>Example Title</h3>
+          <p>This is an example of an accomplishment or event. More details about the achievement or experience can be described here. You can mention outcomes, learnings, or the impact of the work.</p>
+          <span class="date">March 2025</span>
+        </div>
+        <div class="feed-image"></div>
       </div>
 
-      <div class="feed-entry">
-        <h3>Example 2</h3>
-        <p>Here is another example, demonstrating how you can present different accomplishments.</p>
+      <div class="feed-dots">...</div>
+
+      <div class="feed-item">
+        <div class="feed-text">
+          <h3>Another Example Title</h3>
+          <p>This is another example, showing a second accomplishment or project. The layout remains the same, and you can provide relevant details about the experience.</p>
+          <span class="date">April 2025</span>
+        </div>
+        <div class="feed-image"></div>
       </div>
 
-      <div class="feed-entry">
-        <h3>Example 3</h3>
-        <p>Feel free to add more examples or accomplishments to this section as needed.</p>
+      <div class="feed-dots">...</div>
+
+      <div class="feed-item">
+        <div class="feed-text">
+          <h3>Third Example Title</h3>
+          <p>A brief description of the third accomplishment or event. You can discuss a project, paper, or presentation here, and its significance or impact.</p>
+          <span class="date">May 2025</span>
+        </div>
+        <div class="feed-image"></div>
       </div>
     </section>
+
   </main>
 
   <script>
