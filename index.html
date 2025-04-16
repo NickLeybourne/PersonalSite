@@ -17,6 +17,18 @@
       color: #333;
     }
 
+    .container {
+      width: 80%;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      border-radius: 12px;
+      padding: 2rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     h1 { 
       color: #000000;
       margin-top: 1rem;
@@ -147,61 +159,62 @@
   </style>
 </head>
 <body>
-  <img src="https://media.licdn.com/dms/image/v2/D4E03AQHowXXUTHgn6Q/profile-displayphoto-shrink_800_800/B4EZYPe1fpHkAc-/0/1744016464815?e=1750291200&v=beta&t=9OPSjSJXyoQqiN92-HN23PIzzcZK8sKl59xwlchT6UE" alt="Profile Picture" class="profile-pic">
+  <div class="container">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHowXXUTHgn6Q/profile-displayphoto-shrink_800_800/B4EZYPe1fpHkAc-/0/1744016464815?e=1750291200&v=beta&t=9OPSjSJXyoQqiN92-HN23PIzzcZK8sKl59xwlchT6UE" alt="Profile Picture" class="profile-pic">
 
-  <h1>Nicholas Leybourne</h1>
+    <h1>Nicholas Leybourne</h1>
 
-  <div class="dropdown">
-    <button class="dropdown-btn" onclick="toggleDropdown()">Contact Me</button>
-    <div id="contactInfo" class="dropdown-content">
-      <div class="contact-items">
-        <a>
-          <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="Email Icon" style="height: 30px; margin-right: 0.5rem;"> <br>
-          NicholasLeybourne@pm.me
-        </a>
-        <a>
-          <img src="https://icons.veryicon.com/png/o/miscellaneous/yunrenui-original-ui-of-fool-cloud/phone-circle.png" alt="Phone Icon" style="height: 30px; margin-right: 0.5rem;"> <br>
-          +44 7780 739 259
-        </a>
-        <a class="whatsapp-btn" href="https://wa.me/447780739259" target="_blank">
-          <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleDropdown()">Contact Me</button>
+      <div id="contactInfo" class="dropdown-content">
+        <div class="contact-items">
+          <a>
+            <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="Email Icon" style="height: 30px; margin-right: 0.5rem;"> <br>
+            NicholasLeybourne@pm.me
+          </a>
+          <a>
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/yunrenui-original-ui-of-fool-cloud/phone-circle.png" alt="Phone Icon" style="height: 30px; margin-right: 0.5rem;"> <br>
+            +44 7780 739 259
+          </a>
+          <a class="whatsapp-btn" href="https://wa.me/447780739259" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
       </div>
     </div>
+
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/nicholas-leybourne-431429189/" target="_blank" class="linkedin-link">
+        <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"  alt="Linkedin Logo"> LinkedIn
+      </a>
+      <a href="https://orcid.org/0009-0001-9474-7476" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/1024px-ORCID_iD.svg.png" alt="ORCID Logo"> ORCID iD
+      </a>
+      <a href="https://scholar.google.com/citations?user=EWFA3U8AAAAJ&hl=en&oi=ao" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="Google Scholar Logo"> Google Scholar
+      </a>
+      <a href="https://app.jobzmall.com/profile/nicholas-leybourne" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/C4D0BAQG2r8xGJq6uyQ/company-logo_200_200/company-logo_200_200/0/1674468073784/jobzmall_logo?e=2147483647&v=beta&t=AoWtbw0Lemq4n0U3eMbvltMgi5nNNtKwXsumqohPcqM" alt="JobzMall Logo"> JobzMall
+      </a>
+      <a href="https://www.surrey.ac.uk/people/nicholas-leybourne" target="_blank">
+        <img src="https://crystalpng.com/wp-content/uploads/2025/01/university-of-surrey-logo-in-circle.png" alt="University of Surrey Logo"> University of Surrey
+      </a>
+    </div>
+
+    <p>
+      <strong style="display: block; text-align: center;">Welcome to my personal website.</strong>
+      <br>
+      I'm a PhD candidate in medical physics at the University of Surrey, specialising in SiPM-based PET/CT scanners, with experience in image processing, radiation safety, and data analysis, demonstrating strong proficiency in MATLAB and Python. With a background in physics, mathematics, and computing, I bring expertise in experimental research, problem-solving, and communication. I collaborate with leading organizations in medical physics and have multiple publications, presenting my research at international conferences to advance the use of medical imaging technologies.
+    </p>
+
+    <nav>
+       <a href="professional">Professional</a> 
+       <a href="accomplishments.html">Accomplishments</a>
+       <a href="pp">Publications & Press</a>
+    </nav>
+
+    <p>More content coming soon...</p>
   </div>
-
-  <div class="contact-links">
-    <a href="https://www.linkedin.com/in/nicholas-leybourne-431429189/" target="_blank" class="linkedin-link">
-      <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"  alt="Linkedin Logo"> LinkedIn
-    </a>
-    <a href="https://orcid.org/0009-0001-9474-7476" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/1024px-ORCID_iD.svg.png" alt="ORCID Logo"> ORCID iD
-    </a>
-    <a href="https://scholar.google.com/citations?user=EWFA3U8AAAAJ&hl=en&oi=ao" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="Google Scholar Logo"> Google Scholar
-    </a>
-    <a href="https://app.jobzmall.com/profile/nicholas-leybourne" target="_blank">
-      <img src="https://media.licdn.com/dms/image/v2/C4D0BAQG2r8xGJq6uyQ/company-logo_200_200/company-logo_200_200/0/1674468073784/jobzmall_logo?e=2147483647&v=beta&t=AoWtbw0Lemq4n0U3eMbvltMgi5nNNtKwXsumqohPcqM" alt="JobzMall Logo"> JobzMall
-    </a>
-    <a href="https://www.surrey.ac.uk/people/nicholas-leybourne" target="_blank">
-      <img src="https://crystalpng.com/wp-content/uploads/2025/01/university-of-surrey-logo-in-circle.png" alt="University of Surrey Logo"> University of Surrey
-    </a>
-  </div>
-
-  <p>
-    <strong style="display: block; text-align: center;">Welcome to my personal website.</strong>
-    <br>
-    I'm a PhD candidate in medical physics at the University of Surrey, specialising in SiPM-based PET/CT scanners, with experience in image processing, radiation safety, and data analysis, demonstrating strong proficiency in MATLAB and Python. With a background in physics, mathematics, and computing, I bring expertise in experimental research, problem-solving, and communication. I collaborate with leading organizations in medical physics and have multiple publications, presenting my research at international conferences to advance the use of medical imaging technologies.
-  </p>
-
-  <nav>
-     <a href="professional">Professional</a> 
-     <a href="accomplishments.html">Accomplishments</a>
-     <a href="pp">Publications & Press</a>
-  </nav>
-
-  
-  <p>More content coming soon...</p>
 
   <script>
     function toggleDropdown() {
