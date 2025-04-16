@@ -9,6 +9,10 @@
       box-sizing: border-box;
     }
 
+    html, body {
+      height: 100%;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -20,7 +24,9 @@
     }
 
     .sidebar {
+      position: fixed;
       width: 300px;
+      height: 100vh;
       background-color: #f0f0f0;
       padding: 2rem 1rem;
       display: flex;
@@ -45,6 +51,7 @@
     .contact-btn {
       background-color: #000;
       color: white;
+      font-size: 1rem;
       text-decoration: none;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
@@ -93,6 +100,7 @@
     .content {
       flex: 1;
       padding: 2rem;
+      margin-left: 300px;
     }
 
     .whatsapp-btn {
@@ -111,6 +119,48 @@
 
     .whatsapp-btn:hover {
       background-color: #333;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .edu-exp-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .edu-exp-entry .text {
+      max-width: 70%;
+    }
+
+    .edu-exp-entry .date {
+      font-weight: bold;
+      white-space: nowrap;
+      margin-left: 1rem;
+      text-align: right;
+    }
+
+    .edu-exp-entry p {
+      margin: 0.25rem 0 0 0;
+      font-size: 0.95rem;
+      color: #555;
     }
   </style>
 </head>
@@ -140,7 +190,222 @@
 
   <main class="content">
     <h1>Professional</h1>
-    <p>TEST HERE</p>
+    <p>PhD candidate in medical physics at the University of Surrey, specialising in SiPM-based PET/CT scanners, with experience in image processing, radiation safety, and data analysis, demonstrating strong proficiency in MATLAB and Python. With a background in physics, mathematics, and computing, I bring expertise in experimental research, problem-solving, and communication. I collaborate with leading organizations in medical physics and have multiple publications, presenting my research at international conferences to advance the use of medical imaging technologies.</p>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>PhD in Medical Physics</strong>, University of Surrey (CVSSP)
+          <p>Nuclear Medicine, SiPM-based PET/CT Imaging, Molecular Imaging, Radiation Therapy, Dose Painting,
+Image Quality, Image Processing, Problem Solving, Data Analysis, Research
+</p>
+        </div>
+        <div class="date">2021 – Present</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>MSc in Medical Physics</strong>, University of Surrey
+          <p>Radiation Safety and Measurement, Monte Carlo Simulation, Radiation Biology, Diagnostic Imaging, NonIonising Imaging, Mathematics, Biology, Anatomy, Problem Solving, Data Analysis, Research</p>
+        </div>
+        <div class="date">2020 – 2021</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>BSc in Physics</strong>, University of Kent
+          <p>Medical Physics, Mathematics, Mechanics, Atomic Physics, Nuclear Physics, Quantum Physics, Electromagnetism, Optics, Special Relativity, Thermodynamics, Solid State Physics, Laboratory, 3D Printing</p>
+        </div>
+        <div class="date">2017 – 2020</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+<div class="edu-exp-entry">
+        <div class="text">
+          <strong>Presentation</strong>, SPIE Medical Imaging Conference 2025
+          <p>The Role of SiPM-Based PET for Accurate Treatment Volume
+Delineation</p>
+        </div>
+        <div class="date">San Diego, CA, USA <br> Feb 2025</div>
+      </div>
+      
+      
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Collaboration and work experience</strong>, Lancashire Teaching Hospitals NHS Trust
+          <p>Experimental research, shadowing including
+patient imaging and radiopharmaceutical preparation</p>
+        </div>
+        <div class="date">Preston, UK <br> Sept 2024</div>
+      </div>
+
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Presentation</strong>, SPIE Medical Imaging Conference 2024
+          <p>Enhanced Performance Characteristics of Digital PET for Small
+Feature Detection Relative to Non-Digital PET</p>
+        </div>
+        <div class="date">San Diego, CA, USA <br> Feb 2024</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Collaboration and work experience</strong>, Royal Surrey NHS Foundation Trust
+          <p> Experimental research, PACS training, annual
+QA testing and shadowing including patient imaging and radiopharmaceutical
+preparation </p>
+        </div>
+        <div class="date">Guildford, UK <br> Oct 2021 - Present</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Collaboration and work experience</strong>, Alliance Medical
+          <p>experimental research, annual QA testing and
+shadowing including patient imaging and radiopharmaceutical preparation</p>
+        </div>
+        <div class="date">Warwick, UK <br> Oct 2021 - Present</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Collaboration and work experience</strong>, National Physical Laboratory
+          <p>Precise radiation measurement and the importance
+of quality assurance, including NEMA testing</p>
+        </div>
+        <div class="date">London, UK <br> Oct 2021 - Present</div>
+      </div>
+    </section>
+
+
+
+
+<section>
+      <h2>Projects</h2>
+      
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>MSc Research Project:</strong> Optical Surface Capture for 3D Printing in Skin Radiotherapy
+          <p>This project explored the use of Microsoft Azure Kinect 3D depth cameras to produce facial boluses for radiotherapy. Key aspects included evaluating the accuracy of the depth measurements against ground truth distances and comparing Open3D reconstruction techniques, such as Iterative Closest Point (ICP) and manual reconstruction, using both test data and data from a mannequin head. Additionally, data processing workflows were developed to convert raw captured data into a format suitable for further use.</p>
+        </div>
+        <div class="date">May 2021 - Sep 2021</div>
+      </div>
+
+
+   <div class="edu-exp-entry">
+        <div class="text">
+          <strong>MSc Experimental Project:</strong> Nuclear Medicine
+          <p>This project involved experimentally assessing hardware and software of a Positron Emission Tomography (PET) system and conducting a glomerular fltration rate test. Pixel size, count number and collimator distance were assessed using a Williams Liver Phantom to determine the impact of these variables. This was extended post-imaging to include the impact of reconstruction methods and attenuation correction on the resulting images. Glomerular filtration rate was calculated for a number of patients and the importance of quality control in nuclear medicine was discussed.</p>
+        </div>
+        <div class="date">Jan 2021 - May 2021</div>
+      </div>
+
+   <div class="edu-exp-entry">
+        <div class="text">
+          <strong>MSc Experimental Project:</strong> Monte Carlo Modelling
+          <p>The project involved employing the Tool for Particle Simulation (TOPAS) for Monte Carlo modeling to investigate Bremsstrahlung radiation from a tungsten plate at different X-ray energies. Additionally, the project examined the anode heel effect with respect to variations in detector distance and anode angle.</p>
+        </div>
+        <div class="date">May 2020 - Nov 2020</div>
+      </div>
+
+    <div class="edu-exp-entry">
+        <div class="text">
+          <strong>MSc Review Project:</strong> Flash Radiotherapy
+          <p>This project explored the advantages of FLASH radiotherapy, considering its potential for dose escalation and radiobiological aspects, especially the impact of hypoxia.</p>
+        </div>
+        <div class="date">Apr 2020 - May 2020</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>MSc Review Project:</strong> Hadron Therapy and Photon-based Therapy
+          <p>This project reviewed hadron therapy against photon-based radiotherapy in terms of biological effectiveness and depth dose distributions</p>
+        </div>
+        <div class="date">Mar 2020 - Apr 2020</div>
+      </div>
+
+        <div class="edu-exp-entry">
+        <div class="text">
+          <strong>BSc Research Project:</strong> Building and Programming a Custom 3D-Printed Drone
+          <p>This project involved designing and developing a custom drone using OpenSCAD for 3D modeling and printing. I programmed the power control system using Arduino to optimize power distribution and efficiency during flight and conducted detailed assessments of the drone's power management, ensuring stable and efficient performance. Results were assessed and presented for submission as my final year project.</p>
+        </div>
+        <div class="date">May 2019 - Nov 2019</div>
+      </div>
+
+    </section>
+
+    <section>
+
+
+
+
+<section>
+      <h2>Other Skills</h2>
+      
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Languages</strong>: Python, Matlab, LaTeX, OpenSCAD
+          <p></p>
+        </div>
+        <div class="date"> </div>
+      </div>
+
+     
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Technologies</strong>: MicroDicom, TOPAS (Monte Carlo simulation), Arduino, Windows, Microsoft Office (Word,
+Excel, Powerpoint)
+
+          <p></p>
+        </div>
+        <div class="date"> </div>
+      </div>
+    </section>
+
+    <section>
+
+      
+
+
+
+
+<section>
+      <h2>Publications</h2>
+      
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>The role of SiPM-based PET for accurate volume delineation</strong>, SPIE Medical Imaging 2025  
+          <p> Leybourne N, Hussein M, Fenwick A, Evans P, Florescu L <br> <a href="https://doi.org/10.1117/12.3046960" target="_blank">10.1117/12.3046960</a></p>
+        </div>
+        <div class="date"> San Diego, CA, USA  <br> Apr 8, 2025</div>
+      </div>
+
+
+
+      
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Enhanced Performance Characteristics of Digital PET for Small Feature
+Detection Relative to Non-Digital PET
+</strong>, SPIE Medical Imaging 2024 
+          <p> Leybourne N, Gregory R, Berry O, Scuffham J, Evans P, Florescu L, et al. <br> <a href="https://doi.org/10.1117/12.3006788" target="_blank">10.1117/12.3006788</a></p>
+        </div>
+        <div class="date"> San Diego, CA, USA  <br> Apr 1, 2024</div>
+      </div>
+    </section>
+
+    <section>
+
+      <br>
+       <br>
+       <br>
+    
   </main>
 
   <script>
@@ -150,11 +415,9 @@
       contactInfo.style.display = isVisible ? "none" : "block";
     }
 
-    // Ensure dropdown is hidden on page load
     window.addEventListener('DOMContentLoaded', () => {
       document.getElementById("contactInfo").style.display = "none";
     });
   </script>
 </body>
 </html>
-
