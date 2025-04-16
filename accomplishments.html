@@ -173,13 +173,21 @@
       align-self: flex-start;
     }
 
-    .feed-image img {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-  border-radius: 8px;
-}
+    .feed-image {
+      width: 150px;
+      height: 150px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
+    .feed-image img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
 
     .feed-dots {
       text-align: center;
@@ -232,8 +240,8 @@
     <section>
       <div class="feed-item-right">
         <div class="feed-image">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/1200px-LEGO_logo.svg.png" alt="Description" />
-</div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/1200px-LEGO_logo.svg.png" alt="Description" />
+        </div>
         <div class="feed-text">
           <h3>Left Image Example</h3>
           <p>Description of an achievement with image on the left and date aligned right.</p>
@@ -241,15 +249,18 @@
         </div>
       </div>
 
-        <div class="dots-container">
+      <div class="dots-container">
         <div class="feed-dots">.</div>
         <div class="feed-dots">.</div>
         <div class="feed-dots">.</div>
       </div>
 
+      <!-- Repeatable entry blocks -->
 
       <div class="feed-item-left">
-        <div class="feed-image"></div>
+        <div class="feed-image">
+          <img src="https://via.placeholder.com/150" alt="Achievement Image" />
+        </div>
         <div class="feed-text">
           <h3>Right Image Example</h3>
           <p>Details about another project with the image on the right and date on bottom left.</p>
@@ -257,99 +268,20 @@
         </div>
       </div>
 
-        <div class="dots-container">
+      <div class="dots-container">
         <div class="feed-dots">.</div>
         <div class="feed-dots">.</div>
         <div class="feed-dots">.</div>
       </div>
 
-      
-      <div class="feed-item-right">
-        <div class="feed-image"></div>
-        <div class="feed-text">
-          <h3>Third Entry</h3>
-          <p>A final example showing consistent alternating layout and styling.</p>
-          <span class="date">May 2025</span>
-        </div>
-      </div>
+      <!-- Add more entries below as needed -->
 
-        <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-      
-      <div class="feed-item-left">
-        <div class="feed-image"></div>
-        <div class="feed-text">
-          <h3>Third Entry</h3>
-          <p>A final example showing consistent alternating layout and styling.</p>
-          <span class="date">May 2025</span>
-        </div>
-      </div>
-
-        <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-      
-      <div class="feed-item-right">
-        <div class="feed-image"></div>
-        <div class="feed-text">
-          <h3>Third Entry</h3>
-          <p>A final example showing consistent alternating layout and styling.</p>
-          <span class="date">May 2025</span>
-        </div>
-      </div>
-
-        <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-      
-      <div class="feed-item-left">
-        <div class="feed-image"></div>
-        <div class="feed-text">
-          <h3>Third Entry</h3>
-          <p>A final example showing consistent alternating layout and styling.</p>
-          <span class="date">May 2025</span>
-        </div>
-      </div>
-
-        <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-      
-      <div class="feed-item-right">
-        <div class="feed-image"></div>
-        <div class="feed-text">
-          <h3>Third Entry</h3>
-          <p>A final example showing consistent alternating layout and styling.</p>
-          <span class="date">May 2025</span>
-        </div>
-      </div>
-
-      
     </section>
 
-    
-<br>
-  <br>
-  <br>
+    <br><br><br>
 
-
-    
   </main>
 
-  
   <script>
     function toggleDropdown() {
       const contactInfo = document.getElementById("contactInfo");
