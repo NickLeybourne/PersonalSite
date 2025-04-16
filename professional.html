@@ -130,6 +130,29 @@
     li {
       margin-bottom: 0.5rem;
     }
+
+    .edu-exp-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .edu-exp-entry .text {
+      max-width: 70%;
+    }
+
+    .edu-exp-entry .date {
+      font-weight: bold;
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+
+    .edu-exp-entry p {
+      margin: 0.25rem 0 0 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
@@ -154,8 +177,6 @@
     <a class="nav-link" href="professional.html">Professional</a>
     <a class="nav-link" href="accomplishments.html">Accomplishments</a>
     <a class="nav-link" href="pp.html">Publications & Press</a>
-
-    <!-- Adding Professional Link -->
     <a class="nav-link" href="projects.html">Projects</a>
   </aside>
 
@@ -165,19 +186,72 @@
 
     <section>
       <h2>Education</h2>
-      <ul>
-        <li><strong>PhD in Medical Physics</strong>, University of Surrey (Centre for Vision, Speech and Signal Processing)</li>
-        <li><strong>MSc in Medical Physics</strong>, University of Surrey</li>
-        <li><strong>BSc in Physics</strong>, University of Kent</li>
-      </ul>
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>PhD in Medical Physics</strong>, University of Surrey (CVSSP)
+          <p>Research on SiPM-based PET/CT imaging and image analysis in oncology applications.</p>
+        </div>
+        <div class="date">2021 – Present</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>MSc in Medical Physics</strong>, University of Surrey
+          <p>Focused on clinical applications of physics in radiotherapy and diagnostic imaging.</p>
+        </div>
+        <div class="date">2020 – 2021</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>BSc in Physics</strong>, University of Kent
+          <p>Covered core topics in theoretical and experimental physics with research in instrumentation.</p>
+        </div>
+        <div class="date">2016 – 2019</div>
+      </div>
     </section>
 
     <section>
       <h2>Experience</h2>
-      <ul>
-        <li><strong>Postgraduate Researcher</strong>, University of Surrey</li>
-        <li><strong>Medical Physics Intern</strong>, Guy's and St Thomas' NHS Foundation Trust</li>
-      </ul>
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Postgraduate Researcher</strong>, University of Surrey
+          <p>Leading research into quantitative PET imaging and system comparison for treatment planning.</p>
+        </div>
+        <div class="date">2021 – Present</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Collaboration and work experience</strong>, Guy's and St Thomas' NHS Foundation Trust
+          <p>Assisted in clinical imaging trials and radiopharmaceutical quality assurance in nuclear medicine.</p>
+        </div>
+        <div class="date">2022</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Collaboration and work experience</strong>, Guy's and St Thomas' NHS Foundation Trust
+          <p>Worked on evaluating novel reconstruction algorithms for PET image quality assessment.</p>
+        </div>
+        <div class="date">2021</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Collaboration and work experience</strong>, Guy's and St Thomas' NHS Foundation Trust
+          <p>Conducted calibration and QA procedures in SPECT imaging and radiation dose monitoring.</p>
+        </div>
+        <div class="date">2020</div>
+      </div>
+
+      <div class="edu-exp-entry">
+        <div class="text">
+          <strong>Collaboration and work experience</strong>, Guy's and St Thomas' NHS Foundation Trust
+          <p>Engaged in multidisciplinary meetings and data analysis of patient imaging datasets.</p>
+        </div>
+        <div class="date">2019</div>
+      </div>
     </section>
 
     <section>
@@ -197,7 +271,6 @@
       contactInfo.style.display = isVisible ? "none" : "block";
     }
 
-    // Ensure dropdown is hidden on page load
     window.addEventListener('DOMContentLoaded', () => {
       document.getElementById("contactInfo").style.display = "none";
     });
