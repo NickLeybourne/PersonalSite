@@ -122,45 +122,91 @@
     }
 
     section {
+      margin-bottom: 0rem;
+    }
+
+    h1 {
+      text-align: center;
       margin-bottom: 2rem;
     }
 
-    h2 {
-      border-bottom: 2px solid #333;
-      padding-bottom: 0.5rem;
+    .feed-item-left,
+    .feed-item-right {
+      display: flex;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 0rem;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
+    .feed-item-left {
+      flex-direction: row;
     }
 
-    li {
+    .feed-item-right {
+      flex-direction: row-reverse;
+    }
+
+    .feed-text {
+      flex: 1;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .feed-text p {
+      font-size: 0.95rem;
+      color: #555;
       margin-bottom: 0.5rem;
     }
 
-    .edu-exp-entry {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-    }
-
-    .edu-exp-entry .text {
-      max-width: 70%;
-    }
-
-    .edu-exp-entry .date {
+    .feed-text .date {
       font-weight: bold;
-      white-space: nowrap;
-      margin-left: 1rem;
-      text-align: right;
+      color: #333;
+      align-self: flex-end;
+      margin-top: auto;
     }
 
-    .edu-exp-entry p {
-      margin: 0.25rem 0 0 0;
-      font-size: 0.95rem;
-      color: #555;
+    .feed-item-right .feed-text .date {
+      align-self: flex-start;
+    }
+
+    .feed-image {
+      width: 250px;
+      height: 250px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feed-image img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .feed-dots {
+      text-align: center;
+      font-size: 1rem;
+      color: #000000;
+      cursor: pointer;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .dots-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+
+    .dots-container .feed-dots {
+      margin: 0.3px 0 0 0;
     }
   </style>
 </head>
@@ -189,223 +235,143 @@
   </aside>
 
   <main class="content">
-    <h1>Professional</h1>
-    <p>PhD candidate in medical physics at the University of Surrey, specialising in SiPM-based PET/CT scanners, with experience in image processing, radiation safety, and data analysis, demonstrating strong proficiency in MATLAB and Python. With a background in physics, mathematics, and computing, I bring expertise in experimental research, problem-solving, and communication. I collaborate with leading organizations in medical physics and have multiple publications, presenting my research at international conferences to advance the use of medical imaging technologies.</p>
-
-    <section>
-      <h2>Education</h2>
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>PhD in Medical Physics</strong>, University of Surrey (CVSSP)
-          <p>Nuclear Medicine, SiPM-based PET/CT Imaging, Molecular Imaging, Radiation Therapy, Dose Painting,
-Image Quality, Image Processing, Problem Solving, Data Analysis, Research
-</p>
-        </div>
-        <div class="date">2021 – Present</div>
-      </div>
-
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>MSc in Medical Physics</strong>, University of Surrey
-          <p>Radiation Safety and Measurement, Monte Carlo Simulation, Radiation Biology, Diagnostic Imaging, NonIonising Imaging, Mathematics, Biology, Anatomy, Problem Solving, Data Analysis, Research</p>
-        </div>
-        <div class="date">2020 – 2021</div>
-      </div>
-
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>BSc in Physics</strong>, University of Kent
-          <p>Medical Physics, Mathematics, Mechanics, Atomic Physics, Nuclear Physics, Quantum Physics, Electromagnetism, Optics, Special Relativity, Thermodynamics, Solid State Physics, Laboratory, 3D Printing</p>
-        </div>
-        <div class="date">2017 – 2020</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-
-<div class="edu-exp-entry">
-        <div class="text">
-          <strong>Presentation</strong>, SPIE Medical Imaging Conference 2025
-          <p>The Role of SiPM-Based PET for Accurate Treatment Volume
-Delineation</p>
-        </div>
-        <div class="date">San Diego, CA, USA <br> Feb 2025</div>
-      </div>
-      
-      
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>Collaboration and work experience</strong>, Lancashire Teaching Hospitals NHS Trust
-          <p>Experimental research, shadowing including
-patient imaging and radiopharmaceutical preparation</p>
-        </div>
-        <div class="date">Preston, UK <br> Sept 2024</div>
-      </div>
-
-
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>Presentation</strong>, SPIE Medical Imaging Conference 2024
-          <p>Enhanced Performance Characteristics of Digital PET for Small
-Feature Detection Relative to Non-Digital PET</p>
-        </div>
-        <div class="date">San Diego, CA, USA <br> Feb 2024</div>
-      </div>
-
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>Collaboration and work experience</strong>, Royal Surrey NHS Foundation Trust
-          <p> Experimental research, PACS training, annual
-QA testing and shadowing including patient imaging and radiopharmaceutical
-preparation </p>
-        </div>
-        <div class="date">Guildford, UK <br> Oct 2021 - Present</div>
-      </div>
-
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>Collaboration and work experience</strong>, Alliance Medical
-          <p>experimental research, annual QA testing and
-shadowing including patient imaging and radiopharmaceutical preparation</p>
-        </div>
-        <div class="date">Warwick, UK <br> Oct 2021 - Present</div>
-      </div>
-
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>Collaboration and work experience</strong>, National Physical Laboratory
-          <p>Precise radiation measurement and the importance
-of quality assurance, including NEMA testing</p>
-        </div>
-        <div class="date">London, UK <br> Oct 2021 - Present</div>
-      </div>
-    </section>
-
-
-
-
-<section>
-      <h2>Projects</h2>
-      
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>MSc Research Project:</strong> Optical Surface Capture for 3D Printing in Skin Radiotherapy
-          <p>This project explored the use of Microsoft Azure Kinect 3D depth cameras to produce facial boluses for radiotherapy. Key aspects included evaluating the accuracy of the depth measurements against ground truth distances and comparing Open3D reconstruction techniques, such as Iterative Closest Point (ICP) and manual reconstruction, using both test data and data from a mannequin head. Additionally, data processing workflows were developed to convert raw captured data into a format suitable for further use.</p>
-        </div>
-        <div class="date">May 2021 - Sep 2021</div>
-      </div>
-
-
-   <div class="edu-exp-entry">
-        <div class="text">
-          <strong>MSc Experimental Project:</strong> Nuclear Medicine
-          <p>This project involved experimentally assessing hardware and software of a Positron Emission Tomography (PET) system and conducting a glomerular fltration rate test. Pixel size, count number and collimator distance were assessed using a Williams Liver Phantom to determine the impact of these variables. This was extended post-imaging to include the impact of reconstruction methods and attenuation correction on the resulting images. Glomerular filtration rate was calculated for a number of patients and the importance of quality control in nuclear medicine was discussed.</p>
-        </div>
-        <div class="date">Jan 2021 - May 2021</div>
-      </div>
-
-   <div class="edu-exp-entry">
-        <div class="text">
-          <strong>MSc Experimental Project:</strong> Monte Carlo Modelling
-          <p>The project involved employing the Tool for Particle Simulation (TOPAS) for Monte Carlo modeling to investigate Bremsstrahlung radiation from a tungsten plate at different X-ray energies. Additionally, the project examined the anode heel effect with respect to variations in detector distance and anode angle.</p>
-        </div>
-        <div class="date">May 2020 - Nov 2020</div>
-      </div>
-
-    <div class="edu-exp-entry">
-        <div class="text">
-          <strong>MSc Review Project:</strong> Flash Radiotherapy
-          <p>This project explored the advantages of FLASH radiotherapy, considering its potential for dose escalation and radiobiological aspects, especially the impact of hypoxia.</p>
-        </div>
-        <div class="date">Apr 2020 - May 2020</div>
-      </div>
-
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>MSc Review Project:</strong> Hadron Therapy and Photon-based Therapy
-          <p>This project reviewed hadron therapy against photon-based radiotherapy in terms of biological effectiveness and depth dose distributions</p>
-        </div>
-        <div class="date">Mar 2020 - Apr 2020</div>
-      </div>
-
-        <div class="edu-exp-entry">
-        <div class="text">
-          <strong>BSc Research Project:</strong> Building and Programming a Custom 3D-Printed Drone
-          <p>This project involved designing and developing a custom drone using OpenSCAD for 3D modeling and printing. I programmed the power control system using Arduino to optimize power distribution and efficiency during flight and conducted detailed assessments of the drone's power management, ensuring stable and efficient performance. Results were assessed and presented for submission as my final year project.</p>
-        </div>
-        <div class="date">May 2019 - Nov 2019</div>
-      </div>
-
-    </section>
+    <h1>Accomplishments</h1>
 
     <section>
 
 
 
+  <div class="feed-item-left">
+        <div class="feed-image">
+          <img src="Images/half.png" alt="Achievement Image" />
+        </div>
+        <div class="feed-text">
+          <h3>Half-Marathon</h3>
+          <p>13.1 miles of persistence, preparation, and mental resilience. Training alongside research taught me the value of discipline, time management, and pushing through discomfort. Grateful for the challenge and the reminder that consistent effort pays off — in science, sport, and beyond.</p>
+          <span class="date">Febuary 2025</span>
+        </div>
+      </div>
 
-<section>
-      <h2>Other Skills</h2>
+      <div class="dots-container">
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+      </div>
+
+
       
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>Languages</strong>: Python, Matlab, LaTeX, OpenSCAD
-          <p></p>
+      <div class="feed-item-right">
+        <div class="feed-image">
+          <img src="Images/Pen.jpg" alt="Description" />
         </div>
-        <div class="date"> </div>
+        <div class="feed-text">
+          <h3>Summiting Pen y Fan — the highest peak in South Wales</h3>
+          <p> Climbing Pen y Fan was all about teamwork and shared effort. Encouraging each other along the way showed how much collaboration, clear communication, and group resilience can make a difference. Whether it’s on a mountain or in work, having the right people around you makes the journey easier and more rewarding. </p>
+          <span class="date">March 2025</span>
+        </div>
       </div>
 
-     
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>Technologies</strong>: MicroDicom, TOPAS (Monte Carlo simulation), Arduino, Windows, Microsoft Office (Word,
-Excel, Powerpoint)
-
-          <p></p>
-        </div>
-        <div class="date"> </div>
+      <div class="dots-container">
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
       </div>
+
+      <!-- Repeatable entry blocks -->
+
+      <div class="feed-item-left">
+        <div class="feed-image">
+          <img src="Images/Killi.jpg" alt="Achievement Image" />
+        </div>
+        <div class="feed-text">
+          <h3>Summiting Kilimanjaro</h3>
+          <p>Awarded a mountain climbing certificate for summiting Mount Kilimanjaro, the highest peak in Africa. Reaching the top required determination, resilience, and strong teamwork — from navigating tough conditions to keeping spirits up throughout the climb. The expedition also raised £3,000 for charity.</p>
+          <span class="date">September 2022</span>
+        </div>
+      </div>
+
+      <div class="dots-container">
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+      </div>
+
+      <!-- Add more entries below as needed -->
+
+  <div class="feed-item-right">
+        <div class="feed-image">
+          <img src="Images/SRP_Logo.png" alt="Description" />
+        </div>
+        <div class="feed-text">
+          <h3>Higher Education Award</h3>
+          <p>Received a Higher Education Award from the Society for Radiological Protection (SRP), which supports the advancement of radiation protection. Grateful for their sponsorship of my work and their continued commitment to promoting excellence in the field.</p>
+          <span class="date">August 2020</span>
+        </div>
+      </div>
+
+      <div class="dots-container">
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+      </div>
+
+
+
+
+ <div class="feed-item-left">
+        <div class="feed-image">
+          <img src="Images/Costa.jpg" alt="Achievement Image" />
+        </div>
+        <div class="feed-text">
+          <h3>Volunteering for Costa Coffee Foundation</h3>
+          <p>Proud to have spent the week volunteering with the Costa Coffee Foundation, distributing books to children in need. Access to books can profoundly shape a child's confidence, creativity, and future. Supporting literacy and education aligns closely with my values, and it was a privilege to contribute to this initiative.</p>
+          <span class="date">April 2019</span>
+        </div>
+      </div>
+
+      <div class="dots-container">
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+      </div>
+
+
+
+
+        <div class="feed-item-right">
+        <div class="feed-image">
+          <img src="Images/POA.png" alt="Description" />
+        </div>
+        <div class="feed-text">
+          <h3>Physics Olympiad Award</h3>
+          <p>Looking back to the early stages of my career, I’m proud to have earned a Silver Medal in the Physics Olympiad. This achievement not only marked a significant moment in my academic journey but also fueled my passion for physics and solidified my commitment to pursuing a career in science. It’s incredible to think how such early experiences shape the path we take, and this award was a major driving force for me to continue exploring the world of physics.</p>
+          <span class="date">March 2018</span>
+        </div>
+      </div>
+
+        <div class="dots-container">
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+        <div class="feed-dots">.</div>
+      </div>
+
+      
+ <div class="feed-item-left">
+        <div class="feed-image">
+          <img src="Images/Excel.jpg" alt="Achievement Image" />
+        </div>
+        <div class="feed-text">
+          <h3>Excellence Award</h3>
+          <p>Honored to have received the Excellence Award from Strode’s College. This recognition was awarded for my dedication to maintaining an exceptional work ethic and for the development of strong organizational skills. It was an important step in my journey, reinforcing the value of discipline, responsibility, and continuous improvement.</p>
+          <span class="date">November 2017</span>
+        </div>
+      </div>
+
+      
     </section>
 
-    <section>
+    <br><br><br>
 
-      
-
-
-
-
-<section>
-      <h2>Publications</h2>
-      
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>The role of SiPM-based PET for accurate volume delineation</strong>, SPIE Medical Imaging 2025  
-          <p> Leybourne N, Hussein M, Fenwick A, Evans P, Florescu L <br> <a href="https://doi.org/10.1117/12.3046960" target="_blank">10.1117/12.3046960</a></p>
-        </div>
-        <div class="date"> San Diego, CA, USA  <br> Apr 8, 2025</div>
-      </div>
-
-
-
-      
-
-      <div class="edu-exp-entry">
-        <div class="text">
-          <strong>Enhanced Performance Characteristics of Digital PET for Small Feature
-Detection Relative to Non-Digital PET
-</strong>, SPIE Medical Imaging 2024 
-          <p> Leybourne N, Gregory R, Berry O, Scuffham J, Evans P, Florescu L, et al. <br> <a href="https://doi.org/10.1117/12.3006788" target="_blank">10.1117/12.3006788</a></p>
-        </div>
-        <div class="date"> San Diego, CA, USA  <br> Apr 1, 2024</div>
-      </div>
-    </section>
-
-    <section>
-
-      <br>
-       <br>
-       <br>
-    
   </main>
 
   <script>
