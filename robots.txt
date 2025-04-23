@@ -1,1 +1,3 @@
-Sitemap: http://www.nicholasleybourne.info/sitemap.xml
+User-agent: *
+Allow: /
+Sitemap: https://www.nicholasleybourne.info/sitemap.xml
