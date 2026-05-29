@@ -199,6 +199,26 @@
       border-radius: 8px;
     }
 
+    /* Wide image (e.g. journal article page) shown in full, not cropped */
+    .feed-image-wide {
+      width: 340px;
+    }
+
+    .feed-image-wide img {
+      width: 340px;
+      height: auto;
+      max-height: 250px;
+      object-fit: contain;
+      background-color: #0b3a66;
+    }
+
+    @media (max-width: 700px) {
+      .feed-image-wide,
+      .feed-image-wide img {
+        width: 100%;
+      }
+    }
+
     .feed-dots {
       text-align: center;
       font-size: 1rem;
@@ -282,13 +302,13 @@
 
 
   <div class="feed-item-left">
-        <div class="feed-image">
-          <img src="Images/pub1.jpg" alt="Achievement Image" />
+        <div class="feed-image feed-image-wide">
+          <img src="Images/ejnmmi.png" alt="EJNMMI Physics journal article page" />
         </div>
         <div class="feed-text">
-          <h3>Assessing small-lesion detectability and acquisition time optimisation in silicon-detector-based PET: a phantom study <br>  <p> Leybourne N, Prakash V, Evans P, Florescu L, et al. <br> <a href="https://doi.org/10.1186/s40658-025-00821-9" target="_blank">10.1186/s40658-025-00821-9</a></p> </h3>
-          <p>Published in EJNMMI Physics, this phantom study assessed how silicon photomultiplier (SiPM) detector technology improves the detection of small lesions and enables shorter PET acquisition times. Using a modified NEMA IEC Body Phantom with additional sub-centimetre spheres, digital SiPM-based PET was compared with a conventional photomultiplier-tube (PMT) system. Lesions were detectable down to 4 mm in diameter, and an acquisition-time model linking lesion size and sphere-to-background ratio to scan duration demonstrated that comparable detectability could be maintained with acquisition-time reductions of approximately 36 to 65 percent. The findings support shorter, tailored imaging protocols with potential benefits for patient throughput, comfort, and radiation exposure.</p>
-          <span class="date">December 2025</span>
+          <h3>Assessing small-lesion detectability and acquisition time optimisation in silicon-detector-based PET: a phantom study <br>  <p> Leybourne N, Prakash V, Hussein M, Fenwick A, Strouhal P, Evans P, Florescu L <br> <a href="https://doi.org/10.1186/s40658-025-00821-9" target="_blank">10.1186/s40658-025-00821-9</a></p> </h3>
+          <p>Published in EJNMMI Physics, this phantom study assessed how silicon photomultiplier (SiPM) detector technology improves the detection of small lesions and enables shorter PET acquisition times. Using a modified NEMA IEC Body Phantom with additional sub-centimetre spheres, digital SiPM-based PET was compared with a conventional photomultiplier-tube (PMT) system. Lesions were detectable down to 4 mm in diameter, and an acquisition-time model linking lesion size and sphere-to-background ratio to scan duration demonstrated that comparable detectability could be maintained, with acquisition time reduced by between 1.6% and 89% depending on sphere size and uptake. The findings support shorter, tailored imaging protocols with potential benefits for patient throughput, comfort, and radiation exposure.</p>
+          <span class="date">28 December 2025</span>
         </div>
       </div>
 
