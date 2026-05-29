@@ -113,7 +113,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 .hero-grid { display: grid; grid-template-columns: 1.35fr .85fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 .hero-eyebrow { font-size: .74rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin: 0 0 1.1rem; }
 .hero h1 { font-size: clamp(2.4rem, 6vw, 4.1rem); line-height: 1.02; margin: 0 0 1.2rem; letter-spacing: -.02em; }
-.hero h1 .accent { color: var(--accent); }
+.hero h1 .accent { color: var(--ink); }
 .hero-lead { font-size: clamp(1rem, 1.6vw, 1.12rem); color: var(--ink-soft); max-width: 52ch; margin: 0 0 1.8rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 
@@ -239,16 +239,27 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.
 }
 
 @media (max-width: 720px) {
+  /* comfortable side margins on small screens */
+  .wrap { padding: 0 1.25rem; }
+  .nav { padding: .85rem 1.25rem; gap: 1rem; }
+  .brand { font-size: .95rem; min-width: 0; }
+  .nav-toggle { flex: 0 0 auto; }
   .nav-links {
     position: fixed; inset: 58px 0 auto 0; flex-direction: column; align-items: stretch;
     background: rgba(251,250,248,.98); backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--line); padding: .6rem 1.1rem 1.1rem;
-    gap: .1rem; transform: translateY(-110%); transition: transform .35s var(--ease); pointer-events: none;
+    border-bottom: 1px solid var(--line); padding: .6rem 1.25rem 1.1rem;
+    gap: .1rem; transform: translateY(-150%); transition: transform .35s var(--ease); pointer-events: none;
+    visibility: hidden;
   }
-  .nav-links.open { transform: none; pointer-events: auto; }
+  .nav-links.open { transform: none; pointer-events: auto; visibility: visible; }
   .nav-links a { padding: .85rem .8rem; font-size: 1rem; }
   .nav-toggle { display: block; }
   .facts { grid-template-columns: 1fr; gap: 1.1rem; text-align: left; }
   .entry { grid-template-columns: 1fr; gap: .4rem; }
   .entry .meta { text-align: left; }
+  .feed-card, .feed-card.flip { padding: 1.2rem; }
+}
+
+@media (max-width: 420px) {
+  .brand { font-size: .9rem; gap: .5rem; }
 }
