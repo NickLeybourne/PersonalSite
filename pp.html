@@ -2,259 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nick Leybourne</title>
-   <link rel="canonical" href="https://nicholasleybourne.info/pp" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications &amp; Press — Nicholas Leybourne</title>
+  <link rel="canonical" href="https://nicholasleybourne.info/pp" />
   <meta name="description" content="Medical Physicist specialising in SiPM-based PET. Publications & press highlighting conferences and papers.">
+  <meta property="og:title" content="Publications & Press — Nicholas Leybourne">
+  <meta property="og:image" content="https://nicholasleybourne.info/Images/ejnmmi.png">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
 
-    html, body {
-      height: 100%;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      background-color: #b0b0b0;
-      color: #333;
-      min-height: 100vh;
-    }
-    .feed-text p {
-  margin: 0;
-  padding: 0;
-}
-
-
-    .sidebar {
-      position: fixed;
-      width: 300px;
-      height: 100vh;
-      background-color: #f0f0f0;
-      padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-right: 1px solid #ccc;
-    }
-
-    .sidebar img.profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
-
-    .sidebar h2 {
-      text-align: center;
-      margin: 0.5rem 0 1rem 0;
-    }
-
-    .nav-link,
-    .contact-btn {
-  background-color: #000;
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  text-align: center;
-  display: block;
-  margin: 0.5rem 0;
-  transition: background-color 0.3s;
-  width: 100%;
-  max-width: 200px;
-  border: none; /* Add this line to remove border */
-}
-
-
-    .nav-link:hover,
-    .contact-btn:hover {
-      background-color: #333;
-    }
-
-    .dropdown-content {
-      display: none;
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-top: 0.5rem;
-      text-align: center;
-    }
-
-    .contact-item {
-      margin: 0.3rem 0;
-    }
-
-    .contact-links {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      align-items: center;
-    }
-
-    .contact-links img {
-      height: 30px;
-      margin-right: 0.5rem;
-      border-radius: 50%;
-    }
-
-    .content {
-      flex: 1;
-      padding: 2rem;
-      margin-left: 300px;
-    }
-
-    .whatsapp-btn {
-      background-color: #000;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      width: 100%;
-      max-width: 200px;
-      transition: background-color 0.3s;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #333;
-    }
-
-    section {
-      margin-bottom: 0rem;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .feed-item-left,
-    .feed-item-right {
-      display: flex;
-      background-color: white;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 0rem;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .feed-item-left {
-      flex-direction: row;
-    }
-
-    .feed-item-right {
-      flex-direction: row-reverse;
-    }
-
-    .feed-text {
-      flex: 1;
-      padding: 0 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .feed-text p {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 0.1rem;
-    }
-
-    .feed-text .date {
-      font-weight: bold;
-      color: #333;
-      align-self: flex-end;
-      margin-top: auto;
-    }
-
-    .feed-item-right .feed-text .date {
-      align-self: flex-start;
-    }
-
-    .feed-image {
-      width: 250px;
-      height: 250px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .feed-image img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    /* Wide image (e.g. journal article page) shown in full, not cropped */
-    .feed-image-wide {
-      width: 340px;
-    }
-
-    .feed-image-wide img {
-      width: 340px;
-      height: auto;
-      max-height: 250px;
-      object-fit: contain;
-      background-color: #0b3a66;
-    }
-
-    @media (max-width: 700px) {
-      .feed-image-wide,
-      .feed-image-wide img {
-        width: 100%;
-      }
-    }
-
-    .feed-dots {
-      text-align: center;
-      font-size: 1rem;
-      color: #000000;
-      cursor: pointer;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .dots-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 0;
-    }
-
-    .dots-container .feed-dots {
-      margin: 0.3px 0 0 0;
-    }
-  </style>
-
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Nicholas Leybourne",
   "jobTitle": "Medical Physicist",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "East and North Hertfordshire NHS Trust"
-  },
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "University of Surrey",
-    "url": "https://www.surrey.ac.uk"
-  },
+  "affiliation": { "@type": "Organization", "name": "East and North Hertfordshire NHS Trust" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Surrey", "url": "https://www.surrey.ac.uk" },
   "url": "https://nicholasleybourne.info/",
   "sameAs": [
     "https://www.surrey.ac.uk/people/nicholas-leybourne",
@@ -265,160 +32,116 @@
   ],
   "description": "Medical Physicist specialising in SiPM-based PET, working across nuclear medicine, radiation protection, and diagnostic radiology. Holds a PhD in Medical Physics from the University of Surrey. Provides regional QA support for radiology and nuclear medicine services and leads clinical and technical studies improving imaging performance, safety, and service quality. Proficient in MATLAB and Python with a strong background in physics, mathematics, and computing, with multiple publications and international conference presentations in medical imaging. Also an avid mountaineer with expeditions including Mount Kilimanjaro, a business collaborator in real estate, and a director of Tavistock Yiewsley Management Company."
 }
-</script>
-
-<meta name="google-site-verification" content="yMsAXwWLNpJdFh1dJcz5EIwTJRR0X8trNwbzIyciXYU" />
-  
+  </script>
+  <meta name="google-site-verification" content="yMsAXwWLNpJdFh1dJcz5EIwTJRR0X8trNwbzIyciXYU" />
 </head>
 <body>
-<nav class="sidebar" role="navigation">
-    <img src="Images/ProfilePic_noShine.jpeg" alt="Profile Picture" class="profile-pic">
-    <h2>Nicholas Leybourne</h2>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="/"><span class="mark">NL</span> Nicholas Leybourne</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="/">About</a></li>
+        <li><a href="professional">Professional</a></li>
+        <li><a href="accomplishments">Accomplishments</a></li>
+        <li><a href="pp" class="active">Publications &amp; Press</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <button class="contact-btn" onclick="toggleDropdown()">Contact Me</button>
-    <div id="contactInfo" class="dropdown-content">
-      <p class="contact-item">
-        <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="Email" style="height: 20px; vertical-align: middle;"> NicholasLeybourne@pm.me
-      </p>
-      <p class="contact-item">
-        <img src="https://icons.veryicon.com/png/o/miscellaneous/yunrenui-original-ui-of-fool-cloud/phone-circle.png" alt="Phone" style="height: 20px; vertical-align: middle;"> +44 7780 739 259
-      </p>
-      <a class="whatsapp-btn contact-item" href="https://wa.me/447780739259" target="_blank">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-    </div>
-
-    <a class="nav-link" href="/">About</a>
-    <a class="nav-link" href="professional">Professional</a>
-    <a class="nav-link" href="accomplishments">Accomplishments</a>
-    <a class="nav-link" href="pp">Publications & Press</a>
-  </nav>
-
-  <main class="content">
-    <h1>Publications & Press</h1>
-
-    <section>
-
-
-
-  <div class="feed-item-left">
-        <div class="feed-image feed-image-wide">
-          <img src="Images/ejnmmi.png" alt="EJNMMI Physics journal article page" />
-        </div>
-        <div class="feed-text">
-          <h3>Assessing small-lesion detectability and acquisition time optimisation in silicon-detector-based PET: a phantom study <br>  <p> Leybourne N, Prakash V, Hussein M, Fenwick A, Strouhal P, Evans P, Florescu L <br> <a href="https://doi.org/10.1186/s40658-025-00821-9" target="_blank">10.1186/s40658-025-00821-9</a></p> </h3>
-          <p>Published in EJNMMI Physics, this phantom study assessed how silicon photomultiplier (SiPM) detector technology improves the detection of small lesions and enables shorter PET acquisition times. Using a modified NEMA IEC Body Phantom with additional sub-centimetre spheres, digital SiPM-based PET was compared with a conventional photomultiplier-tube (PMT) system. Lesions were detectable down to 4 mm in diameter, and an acquisition-time model linking lesion size and sphere-to-background ratio to scan duration demonstrated that comparable detectability could be maintained, with acquisition time reduced by between 1.6% and 89% depending on sphere size and uptake. The findings support shorter, tailored imaging protocols with potential benefits for patient throughput, comfort, and radiation exposure.</p>
-          <span class="date">28 December 2025</span>
-        </div>
-      </div>
-
-      <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-  <div class="feed-item-right">
-        <div class="feed-image">
-          <img src="Images/pub2.jpg" alt="Achievement Image" />
-        </div>
-        <div class="feed-text">
-          <h3>The role of SiPM-based PET for accurate volume delineation <br>  <p> Leybourne N, Hussein M, Fenwick A, Evans P, Florescu L <br> <a href="https://doi.org/10.1117/12.3046960" target="_blank">10.1117/12.3046960</a></p> </h3>
-          <p>This study investigated the efficacy of silicon photomultiplier (SiPM) PET systems in improving volume delineation for radiotherapy treatment planning. Using a modified NEMA IEC Body Phantom filled with fluorodeoxyglucose (18F-FDG), both digital SiPM-based and non-digital photomultiplier tube PET scanners were evaluated. Results showed that the digital SiPM system consistently delineated target volumes 1.91 to 3.56 times larger than the non-digital system. The digital system's target volumes (440mm³ to 984mm³) were closer to the true geometric volume of the spheres (2156mm³), compared to the non-digital system (209mm³ to 419mm³). These differences were most pronounced for higher sphere-to-background activity ratios and smaller structures. The study suggests that digital PET can improve cancer treatment planning, offering advantages for targeted radiation therapy.</p>
-          <span class="date">April 2025</span>
-        </div>
-      </div>
-
-      <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-
-      
-      <div class="feed-item-right">
-        <div class="feed-image">
-          <img src="Images/Spie2.jpg" alt="Description" />
-        </div>
-        <div class="feed-text">
-          <h3>SPIE Medical Imaging Conference 2025, San Diego, USA</h3>
-          <p> Attending the SPIE Medical Imaging Conference 2025 was a valuable experience for my career development. Presenting my work allowed me to showcase my research and receive constructive feedback, which helped me make significant progress. It also provided a unique opportunity to engage with other professionals in the field, learn about their work, and gain insights that expanded my knowledge and perspective.  </p>
-          <span class="date">Febuary 2025</span>
-        </div>
-      </div>
-
-      <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-      <!-- Repeatable entry blocks -->
-
-      <div class="feed-item-left">
-        <div class="feed-image">
-          <img src="Images/pub1.jpg" alt="Achievement Image" />
-        </div>
-        <div class="feed-text">
-          <h3>Enhanced performance characteristics of digital PET for small feature detection relative to non-digital PET <br>  <p> Leybourne N, Gregory R, Berry O, Scuffham J, Evans P, Florescu L, et al. <br> <a href="https://doi.org/10.1117/12.3006788" target="_blank">10.1117/12.3006788</a></p></h3>
-          <p>This study investigated the performance of digital PET/CT systems in detecting smaller lesions using subcentimeter microsphere inserts in a NEMA IEC Body Phantom. The digital system was compared to a non-digital PET scanner with the same image reconstruction method. Results showed that the digital system had higher detectability for lesions under 7.9mm, with an average 1-point higher Likert score. Additionally, contrast recovery drop-off occurred at smaller microspheres in the digital system, suggesting that digital PET requires smaller spheres in image quality testing for accurate performance comparison. These findings highlight the superior imaging capabilities of digital PET, improving lesion visibility and detection.</p>
-          <span class="date">April 2024</span>
-        </div>
-      </div>
-
-      <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-      <!-- Add more entries below as needed -->
-
-  <div class="feed-item-right">
-        <div class="feed-image">
-          <img src="Images/Spie1.jpg" alt="Description" />
-        </div>
-        <div class="feed-text">
-          <h3>SPIE Medical Imaging Conference 2024, San Diego, USA</h3>
-          <p>Presenting my poster at SPIE Medical Imaging 2024 provided a valuable platform to engage with experts in the field, whose constructive feedback contributed to the refinement of my methodology and interpretation of results. The experience facilitated critical reflection on my current work, highlighting areas for further exploration and improvement. Additionally, attending the conference allowed me to stay up to date of the latest developments, methodologies, and innovations in the discipline, and to engage in meaningful discussions with fellow researchers.</p>
-          <span class="date">Febuary 2024</span>
-        </div>
-      </div>
-
-       <div class="dots-container">
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-        <div class="feed-dots">.</div>
-      </div>
-
-     <div class="feed-item-left">
-        <div class="feed-image">
-          <img src="Images/Seminar.png" alt="Achievement Image" />
-        </div>
-        <div class="feed-text">
-          <h3>Research Seminar Speaker, CVSSP  <br>  <p> Image Quality and Clinical Potential of Novel Silicon-Based PET </p></h3>
-          <p>This presentation examined the advantages of silicon-based PET compared to conventional systems. It outlined the principles of PET imaging using FDG as a positron-emitting tracer and described digital photon counter technology, which enables detection of individual photon events. Preliminary research was presented using modified NEMA phantoms with small spheres to investigate the feasibility of reduced scan times, lower radiation doses, improved diagnostic accuracy, and enhanced treatment planning. Potential applications in radiotherapy, including dose painting techniques, were also explored.</p>
-          <span class="date">November 2023</span>
-        </div>
-      </div>
-      
+  <main>
+    <section class="page-hero wrap">
+      <h1 class="reveal">Publications &amp; Press</h1>
+      <p class="reveal">Peer-reviewed papers, conference proceedings and invited talks across SiPM-based PET, image quality and radiotherapy applications.</p>
     </section>
 
-    <br><br><br>
+    <section class="section wrap">
+      <div class="feed">
 
+        <!-- EJNMMI -->
+        <article class="feed-card reveal">
+          <div class="feed-media wide"><img src="Images/ejnmmi.png" alt="EJNMMI Physics journal article page"></div>
+          <div class="feed-body">
+            <h3>Assessing small-lesion detectability and acquisition time optimisation in silicon-detector-based PET: a phantom study</h3>
+            <p class="feed-authors">Leybourne N, Prakash V, Hussein M, Fenwick A, Strouhal P, Evans P, Florescu L</p>
+            <a class="feed-doi" href="https://doi.org/10.1186/s40658-025-00821-9" target="_blank" rel="noopener">10.1186/s40658-025-00821-9</a>
+            <p class="txt">Published in EJNMMI Physics, this phantom study assessed how silicon photomultiplier (SiPM) detector technology improves the detection of small lesions and enables shorter PET acquisition times. Using a modified NEMA IEC Body Phantom with additional sub-centimetre spheres, digital SiPM-based PET was compared with a conventional photomultiplier-tube (PMT) system. Lesions were detectable down to 4&nbsp;mm in diameter, and an acquisition-time model linking lesion size and sphere-to-background ratio to scan duration demonstrated that comparable detectability could be maintained, with acquisition time reduced by between 1.6% and 89% depending on sphere size and uptake. The findings support shorter, tailored imaging protocols with potential benefits for patient throughput, comfort, and radiation exposure.</p>
+            <div class="feed-date">28 December 2025</div>
+          </div>
+        </article>
+
+        <!-- Volume delineation -->
+        <article class="feed-card flip reveal">
+          <div class="feed-media"><img src="Images/pub2.jpg" alt="SiPM-based PET volume delineation poster"></div>
+          <div class="feed-body">
+            <h3>The role of SiPM-based PET for accurate volume delineation</h3>
+            <p class="feed-authors">Leybourne N, Hussein M, Fenwick A, Evans P, Florescu L</p>
+            <a class="feed-doi" href="https://doi.org/10.1117/12.3046960" target="_blank" rel="noopener">10.1117/12.3046960</a>
+            <p class="txt">This study investigated the efficacy of silicon photomultiplier (SiPM) PET systems in improving volume delineation for radiotherapy treatment planning. Using a modified NEMA IEC Body Phantom filled with fluorodeoxyglucose (18F-FDG), both digital SiPM-based and non-digital photomultiplier tube PET scanners were evaluated. Results showed that the digital SiPM system consistently delineated target volumes 1.91 to 3.56 times larger than the non-digital system. The digital system's target volumes (440mm³ to 984mm³) were closer to the true geometric volume of the spheres (2156mm³), compared to the non-digital system (209mm³ to 419mm³). These differences were most pronounced for higher sphere-to-background activity ratios and smaller structures. The study suggests that digital PET can improve cancer treatment planning, offering advantages for targeted radiation therapy.</p>
+            <div class="feed-date">April 2025</div>
+          </div>
+        </article>
+
+        <!-- SPIE 2025 -->
+        <article class="feed-card flip reveal">
+          <div class="feed-media"><img src="Images/Spie2.jpg" alt="SPIE Medical Imaging Conference 2025"></div>
+          <div class="feed-body">
+            <h3>SPIE Medical Imaging Conference 2025, San Diego, USA</h3>
+            <p class="txt">Attending the SPIE Medical Imaging Conference 2025 was a valuable experience for my career development. Presenting my work allowed me to showcase my research and receive constructive feedback, which helped me make significant progress. It also provided a unique opportunity to engage with other professionals in the field, learn about their work, and gain insights that expanded my knowledge and perspective.</p>
+            <div class="feed-date">February 2025</div>
+          </div>
+        </article>
+
+        <!-- Digital PET small feature -->
+        <article class="feed-card reveal">
+          <div class="feed-media"><img src="Images/pub1.jpg" alt="Digital PET small feature detection study"></div>
+          <div class="feed-body">
+            <h3>Enhanced performance characteristics of digital PET for small feature detection relative to non-digital PET</h3>
+            <p class="feed-authors">Leybourne N, Gregory R, Berry O, Scuffham J, Evans P, Florescu L, et al.</p>
+            <a class="feed-doi" href="https://doi.org/10.1117/12.3006788" target="_blank" rel="noopener">10.1117/12.3006788</a>
+            <p class="txt">This study investigated the performance of digital PET/CT systems in detecting smaller lesions using subcentimeter microsphere inserts in a NEMA IEC Body Phantom. The digital system was compared to a non-digital PET scanner with the same image reconstruction method. Results showed that the digital system had higher detectability for lesions under 7.9mm, with an average 1-point higher Likert score. Additionally, contrast recovery drop-off occurred at smaller microspheres in the digital system, suggesting that digital PET requires smaller spheres in image quality testing for accurate performance comparison. These findings highlight the superior imaging capabilities of digital PET, improving lesion visibility and detection.</p>
+            <div class="feed-date">April 2024</div>
+          </div>
+        </article>
+
+        <!-- SPIE 2024 -->
+        <article class="feed-card flip reveal">
+          <div class="feed-media"><img src="Images/Spie1.jpg" alt="SPIE Medical Imaging Conference 2024"></div>
+          <div class="feed-body">
+            <h3>SPIE Medical Imaging Conference 2024, San Diego, USA</h3>
+            <p class="txt">Presenting my poster at SPIE Medical Imaging 2024 provided a valuable platform to engage with experts in the field, whose constructive feedback contributed to the refinement of my methodology and interpretation of results. The experience facilitated critical reflection on my current work, highlighting areas for further exploration and improvement. Additionally, attending the conference allowed me to stay up to date of the latest developments, methodologies, and innovations in the discipline, and to engage in meaningful discussions with fellow researchers.</p>
+            <div class="feed-date">February 2024</div>
+          </div>
+        </article>
+
+        <!-- Seminar -->
+        <article class="feed-card reveal">
+          <div class="feed-media"><img src="Images/Seminar.png" alt="CVSSP research seminar"></div>
+          <div class="feed-body">
+            <h3>Research Seminar Speaker, CVSSP</h3>
+            <p class="feed-authors">Image Quality and Clinical Potential of Novel Silicon-Based PET</p>
+            <p class="txt">This presentation examined the advantages of silicon-based PET compared to conventional systems. It outlined the principles of PET imaging using FDG as a positron-emitting tracer and described digital photon counter technology, which enables detection of individual photon events. Preliminary research was presented using modified NEMA phantoms with small spheres to investigate the feasibility of reduced scan times, lower radiation doses, improved diagnostic accuracy, and enhanced treatment planning. Potential applications in radiotherapy, including dose painting techniques, were also explored.</p>
+            <div class="feed-date">November 2023</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
   </main>
 
-  <script>
-    function toggleDropdown() {
-      const contactInfo = document.getElementById("contactInfo");
-      const isVisible = contactInfo.style.display === "block";
-      contactInfo.style.display = isVisible ? "none" : "block";
-    }
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="yr"></span> Nicholas Leybourne</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/nicholas-leybourne-431429189/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://orcid.org/0009-0001-9474-7476" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=EWFA3U8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Scholar</a>
+      </div>
+    </div>
+  </footer>
 
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById("contactInfo").style.display = "none";
-    });
-  </script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
